@@ -4,4 +4,4 @@
 "3","droplevels",NA,""
 "4","is.element",NA,""
 "5","relevel",NA,""
-"6","log",NA,""
+"6","log","log (default base = e)",""
