@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Week 9 | R Function Flashcards</title>
-  <meta name="description" content="Week 9 | R Function Flashcards" />
+  <title>Instructions | R Function Flashcards</title>
+  <meta name="description" content="Instructions | R Function Flashcards" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Week 9 | R Function Flashcards" />
+  <meta property="og:title" content="Instructions | R Function Flashcards" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Week 9 | R Function Flashcards" />
+  <meta name="twitter:title" content="Instructions | R Function Flashcards" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="week-8-1.html"/>
-<link rel="next" href="week-10-1.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="week-5.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -297,46 +297,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="week-9-1" class="section level1 unnumbered hasAnchor">
-<h1>Week 9<a href="week-9-1.html#week-9-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="new-r-functions-this-week-10" class="section level2 unnumbered hasAnchor">
-<h2>New R Functions this Week<a href="week-9-1.html#new-r-functions-this-week-10" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-<p><iframe width="100%" height="100%"
-    src="htmlfiles/PO12Q_Week 9_New.html"
-    frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
-</iframe></p>
+<div id="instructions" class="section level1 unnumbered hasAnchor">
+<h1>Instructions<a href="instructions.html#instructions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 unnumbered hasAnchor">
+<h2>Introduction<a href="instructions.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can revise the R Functions we use each week with the flashcards provided. But yuou might want to create your own deck of cards, for example with more difficult-to-remember functions. You might also want to render the flashcards in R Studio, so you can view them there, rather than on this page.</p>
 </div>
-<p>The data are available as an <a href="excelfiles/PO12Q_Week%209_New.csv">.csv Sheet</a>.</p>
+<div id="view-existing-decks" class="section level2 unnumbered hasAnchor">
+<h2>View Existing Decks<a href="instructions.html#view-existing-decks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As a first step, download the .csv file from underneath the deck you wish to replicate in R Studio. Place this in a working directory, and use <code>setwd</code> to set the working directory in R.</p>
+<p>The package you need is called <code>flashr</code> which you need to install and load:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default"><code class="sourceCode default"><span id="cb1-1"><a href="instructions.html#cb1-1" tabindex="-1"></a>install.packages(&quot;flashr&quot;)</span>
+<span id="cb1-2"><a href="instructions.html#cb1-2" tabindex="-1"></a>library(flashr)</span></code></pre></div>
+<p>In order to create the deck of cards in R Studio, you need the <code>flashcard</code> function, which takes as its argument the name of the .csv file. For example, if you wanted to create a deck of cards with all the terms used on PO12Q, you would call:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default"><code class="sourceCode default"><span id="cb2-1"><a href="instructions.html#cb2-1" tabindex="-1"></a>flashcard(&quot;PO12Q_Week 10_Consolidate.csv&quot;)</span></code></pre></div>
 </div>
-<div id="all-r-functions-we-used-this-week-12" class="section level2 unnumbered hasAnchor">
-<h2>All R Functions we used this Week<a href="week-9-1.html#all-r-functions-we-used-this-week-12" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-<p><iframe width="100%" height="100%"
-    src="htmlfiles/PO12Q_Week 9_All.html"
-    frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
-</iframe></p>
-</div>
-<p>The data are available as an <a href="excelfiles/PO12Q_Week%209_All.csv">.csv Sheet</a>.</p>
-</div>
-<div id="all-r-functions-we-used-up-to-this-week-9" class="section level2 unnumbered hasAnchor">
-<h2>All R Functions we used up to this Week<a href="week-9-1.html#all-r-functions-we-used-up-to-this-week-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-<p><iframe width="100%" height="100%"
-    src="htmlfiles/PO12Q_Week 9_Consolidate.html"
-    frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
-</iframe></p>
-</div>
-<p>The data are available as an <a href="excelfiles/PO12Q_Week%209_Consolidate.csv">.csv Sheet</a>.</p>
+<div id="create-your-own-decks" class="section level2 unnumbered hasAnchor">
+<h2>Create Your Own Decks<a href="instructions.html#create-your-own-decks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In order to create your own deck of cards with particularly “sticky” functions, you need to create your own .csv file. It is important that the first column is titled “term”, and the second column is titled “description”. Once you have created this .csv file, follow the instructioins in the previous Section.</p>
+
 </div>
 </div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="week-8-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="week-10-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="week-5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
