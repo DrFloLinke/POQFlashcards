@@ -1,0 +1,6 @@
+"term","description","title"
+"read.csv","read a csv file to data frame. Specify stringsAsFactors = FALSE to keep all string columns as characters","New Functions in Week 9"
+"complete.cases","retrieve indices of complete observations",""
+"with","evaluate expression in the context of a data frame (without using the “$” operator)",""
+"t.test",NA,""
+"prop.test",NA,""

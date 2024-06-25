@@ -1,0 +1,5 @@
+"term","description","title"
+"set",NA,"All Functions of Week 1"
+"ifelse","return a or b depending on the value of test",""
+"setwd","Set Working Directory",""
+"library","load an R package",""
