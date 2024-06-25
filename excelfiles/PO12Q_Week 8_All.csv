@@ -1,8 +1,0 @@
-"term","description","title"
-"setwd","Set Working Directory","All Functions of Week 8"
-"library","load an R package",""
-"read_dta",NA,""
-"lm",NA,""
-"summary","Obtain summary statistics or detailed regression output",""
-"stargazer",NA,""
-"c","Combine values/vectors into a vector",""
