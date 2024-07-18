@@ -30,7 +30,6 @@
 "attach",NA,""
 "str","get the structure of an R object",""
 "head","show first 5 rows of a data frame",""
-"head","print first n (default 5) rows of the data",""
 "geom_histogram",NA,""
 "sum","get sum of numeric values or a vector",""
 "filter","filter out rows of a data frame according to logical vector",""

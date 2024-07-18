@@ -1,6 +1,5 @@
 "term","description","title"
-"dim","get dimensions of a data frame ","New Functions in Week 8"
-"geom_smooth",NA,""
+"geom_smooth",NA,"New Functions in Week 8"
 "geom_hline","Add a horizontal line in GGPLOT2",""
 "geom_vline",NA,""
 "lm",NA,""

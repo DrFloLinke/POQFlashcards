@@ -12,7 +12,7 @@
 "set.seed",NA,""
 "rnorm",NA,""
 "as.data.frame",NA,""
-"after_stat",NA,""
+"after_stat","Control aesthetic evaluation. Most aesthetics are mapped from variables found in the data. Sometimes, however, you want to delay the mapping until later in the rendering process. ggplot2 has three stages of the data that you can map aesthetics from, and three functions to control at which stage aesthetics should be evaluated.",""
 "geom_density",NA,""
 "xlab",NA,""
 "ylab",NA,""
