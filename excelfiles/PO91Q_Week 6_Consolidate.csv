@@ -9,7 +9,7 @@
 "rbind","base","Combine R objects by rows",""
 "cbind","base","Combine R objects by columns",""
 "ls","base","Return a vector of character strings giving the names of the objects in the specified environment",""
-"ls.str","utils","Similarly to ls, with a print() method that calls str() on each object.",""
+"ls.str","utils","Similarly to ls, with a print() method that calls str() on each object",""
 "read.spss","foreign","Read a .sav file (SPSS data)",""
 "attach","base","Attach Set of R Objects to Search Path",""
 "View","base","View a data frame",""
