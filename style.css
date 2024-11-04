@@ -37,3 +37,22 @@
 }
 
 table { caption-side: bottom }
+
+
+
+.book.font-family-0 {
+  font-family: Avenir, Helvetica, "sans serif";
+}
+.book.font-family-1 {
+  font-family: Avenir, Helvetica, "sans serif";
+}
+
+.summary{
+font-family: Avenir, Helvetica, "sans serif";
+}
+
+li.appendix span, li.part span { /* for TOC part names */
+  margin-top: 1em;
+  opacity: 1 !important;
+  text-transform: uppercase;
+}
