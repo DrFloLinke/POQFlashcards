@@ -25,6 +25,11 @@
   text-decoration: none;
 }
 
+.book .book-summary ul.summary li.done i.fa-check
+{
+  display: none;
+}
+
 .book .book-summary ul.summary li a.gitbook-link {
   color: #e9eef2;
 }
@@ -76,6 +81,7 @@ li.appendix span, li.part span { /* for TOC part names */
   opacity: 1 !important;
   text-transform: uppercase;
 }
+
 
 
 /*____Code Chunks____*/
