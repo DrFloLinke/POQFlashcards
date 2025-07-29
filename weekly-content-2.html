@@ -50,6 +50,34 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!-- Load Lexend Deca font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const menuButton = document.querySelector('.book-header .btn');
+
+  if (menuButton) {
+    const customLink = document.createElement("a");
+    customLink.href = "https://drfloreiche.github.io/";
+    customLink.classList.add("btn");
+    customLink.style.marginLeft = "10px";
+    customLink.style.display = "inline-block";
+    customLink.style.fontFamily = "'Lexend Deca', sans-serif";
+    customLink.style.fontWeight = "500"; // Medium weight
+    customLink.textContent = "Flo's Home";  // No icon, just text
+
+    // Insert the link after the "i" icon
+    menuButton.parentNode.insertBefore(customLink, menuButton.nextSibling);
+
+    // Normalize to prevent line breaks
+    const header = document.querySelector('.book-header');
+    if (header) {
+      header.normalize();
+    }
+  }
+});
+</script>
 
 
 <style type="text/css">
