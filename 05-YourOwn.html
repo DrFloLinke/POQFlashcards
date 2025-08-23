@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr Flo Reiche">
 
-<title> POQ Flashcards – POQ Flashcards</title>
+<title>Create Your Own – POQ Flashcards</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-PO11Q.html" rel="next">
+<link href="./04-PO91Q.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -122,7 +155,7 @@ window.MathJax = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-title">Preface</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-YourOwn.html"><span class="chapter-title">Create Your Own</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -136,7 +169,7 @@ window.MathJax = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Preface</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -161,7 +194,7 @@ window.MathJax = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-YourOwn.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Create Your Own</span></a>
+  <a href="./05-YourOwn.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Create Your Own</span></a>
   </div>
 </li>
     </ul>
@@ -174,8 +207,12 @@ window.MathJax = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
-  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility">Accessibility</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#view-existing-decks" id="toc-view-existing-decks" class="nav-link" data-scroll-target="#view-existing-decks">View Existing Decks</a></li>
+  <li><a href="#create-your-own-decks" id="toc-create-your-own-decks" class="nav-link" data-scroll-target="#create-your-own-decks">Create Your Own Decks</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -184,27 +221,14 @@ window.MathJax = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><p><img src="images/Crest_white.png" width="75" style="display:block; margin:auto; margin-bottom:3em;"> POQ Flashcards</p></h1>
+<h1 class="title"><span class="chapter-title">Create Your Own</span></h1>
 </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Dr Flo Reiche </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Department of Politics and International Studies, University of Warwick
-          </p>
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
+    
   
     
   </div>
@@ -214,59 +238,31 @@ window.MathJax = {
 </header>
 
 
-<style>
-/* Re-enable title block on this page only */
-header#title-block-header, .quarto-title-block { display: block !important; }
-
-/* index page only (because it's inline here) */
-.quarto-title-block { 
-  background: transparent !important;
-  padding: 1rem 0 !important;
-  border: 0 !important;
-}
-/* hide the large title text but keep meta (author/affiliation) */
-.quarto-title-block .quarto-title h1.title { 
-  display: none !important; 
-}
-/* center the meta nicely */
-.quarto-title-block .quarto-title-meta {
-  display: flex !important;
-  justify-content: center !important;
-  text-align: center !important;
-  gap: .75rem;
-}
-</style>
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>Welcome to the collection of flashcards which should help you learn the purpose of R functions on all POQ-coded modules in PAIS for which I am responsible<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. These are listed in the left-hand menu, and are subdivided by weekly content. The last section in Week 10 of each module tests all functions employed on the respective module.</p>
-<p>If you have any queries, please feel free to contact me.</p>
-<p><img align="left" src="images/signature_white.png" width="200"></p>
-<p>
-&nbsp;
-</p>
-<p>
-&nbsp;
-</p>
-<p>
-&nbsp;
-</p>
-<p>
-&nbsp;
-</p>
+<section id="instructions" class="level1 unnumbered">
+<h1 class="unnumbered">Instructions</h1>
+<section id="introduction" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
+<p>You can revise the R Functions we use each week with the flashcards provided. But you might want to create your own deck of cards, for example with more difficult-to-remember functions. You might also want to render the flashcards in R Studio, so you can view them there, rather than on this page.</p>
 </section>
-<section id="accessibility" class="level1 unnumbered">
-<h1 class="unnumbered">Accessibility</h1>
-<p>The companion uses the font “<a href="https://fonts.google.com/specimen/Lexend">Lexend</a>”. Lexend fonts are intended to reduce visual stress and so improve reading performance. Initially they were designed with dyslexia and struggling readers in mind, but Bonnie Shaver-Troup, creator of the Lexend project, soon found out that these fonts are also great for everyone else.</p>
-<p>The companion also uses a dark mode theme. For many users, including some neurodivergent individuals, dark mode can reduce eye strain and enhance focus by minimising visual overstimulation.</p>
-<p>Whilst I recognise that mobile phones play an essential part in all our daily lives, please note that this companion is optimised for display on tablets, laptops, and desktop computers.</p>
+<section id="view-existing-decks" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="view-existing-decks">View Existing Decks</h2>
+<p>As a first step, download the .csv file from underneath the deck you wish to replicate in R Studio. Place this in a working directory, and use <code>setwd</code> to set the working directory in R.</p>
+<p>The package you need is called <code>flashr</code> which you need to install and load:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"flashr"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flashr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>In order to create the deck of cards in R Studio, you need the <code>flashcard</code> function, which takes as its argument the name of the .csv file. For example, if you wanted to create a deck of cards with all the terms used on PO12Q, you would call:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">flashcard</span>(<span class="st">"PO12Q_Week 10_Consolidate.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="create-your-own-decks" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="create-your-own-decks">Create Your Own Decks</h2>
+<p>In order to create your own deck of cards with particularly “sticky” functions, you need to create your own .csv file. It is important that the first column is titled “term”, and the second column is titled “description”. Once you have created this .csv file, follow the instructioins in the previous Section.</p>
 
 
 </section>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p>The descriptions are either written by the author, or are taken from https://www.rdocumentation.org/ and https://r-coder.com/<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
 </section>
 
 </main> <!-- /main -->
@@ -712,11 +708,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-PO91Q.html" class="pagination-link" aria-label="PO91Q">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">PO91Q</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-PO11Q.html" class="pagination-link" aria-label="PO11Q">
-        <span class="nav-page-text"><span class="chapter-title">PO11Q</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
