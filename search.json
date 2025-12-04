@@ -404,7 +404,7 @@
     "href": "05-YourOwn.html#create-your-own-decks",
     "title": "Create Your Own",
     "section": "Create Your Own Decks",
-    "text": "Create Your Own Decks\nIn order to create your own deck of cards with particularly “sticky” functions, you need to create your own .csv file. It is important that the first column is titled “term”, and the second column is titled “description”. Once you have created this .csv file, follow the instructioins in the previous Section.",
+    "text": "Create Your Own Decks\nIn order to create your own deck of cards with particularly “sticky” functions, you need to create your own csv file. It is important that the first column is titled “term”, and the second column is titled “description”. Once you have created this .csv file, follow the instructioins in the previous Section.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Create Your Own</span>"
     ]
