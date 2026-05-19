@@ -1,0 +1,4 @@
+"term","package","description","title"
+"cat","base","Concatenate and print objects to the console without quotes or indices","New Functions in Week 8"
+"round","base","Rounds numbers",""
+"theme_latex","tinytable","A theme for modelsummary/tinytable tables",""
